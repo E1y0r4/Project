@@ -1,7 +1,8 @@
 import React from 'react'
+import '../index.css'
 import { Container,Header,Nav, NavWrap, } from './style'
 import {navbar} from '../utils/navbar'
-import { Link,Outlet,useNavigate } from 'react-router-dom'
+import { Link,useNavigate } from 'react-router-dom'
 import Button from '../components/Generic/Button/index'
 
 
@@ -23,7 +24,7 @@ const Navbar = () => {
           })}
         </Nav>
         
-          <Button onClick={()=>navigate('/login')} width='120px' >Login</Button>
+          <Button onClick={()=>navigate('/login')} width='120px' animate__jello>Login</Button>
         
           </NavWrap>
       </Header>

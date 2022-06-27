@@ -32,6 +32,9 @@ font-size: 16px;
 line-height: 24px;
 width: 100%;
 color: white;
+.active{
+   color: #00fff5;
+}
 `
 Nav.Logo=styled(Navlogo)`
 
@@ -52,8 +55,9 @@ margin: 0 32px;
 font-size: 16px;
 line-height: 24px;
 color: #FFFFFF;
-.active{
-   color: aqua;
+:active{
+   transform: scale(0.98);
+   opacity: 0.7;
 }
 `
 // const Nav_Link=styled(NavLink)`

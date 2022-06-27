@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import ('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@500&display=swap');
 const getType=(type)=>{
     switch (type) {
        case `primary`:
