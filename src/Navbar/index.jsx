@@ -2,7 +2,7 @@ import React from 'react'
 import '../index.css'
 import { Container,Header,Nav, NavWrap, } from './style'
 import {navbar} from '../utils/navbar'
-import { Link,useNavigate } from 'react-router-dom'
+import { Link,useNavigate,Outlet } from 'react-router-dom'
 import Button from '../components/Generic/Button/index'
 
 
@@ -24,10 +24,14 @@ const Navbar = () => {
           })}
         </Nav>
         
-          <Button onClick={()=>navigate('/login')} width='120px' animate__jello>Login</Button>
-        
+          <Button onClick={()=>navigate('/signin')} width='120px'>
+            Login
+          </Button>
           </NavWrap>
       </Header>
+      <main>
+        <Outlet/>
+      </main>
       </Container>
   )
 }
