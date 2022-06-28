@@ -8,8 +8,8 @@ const Filter = () => {
     <Container>
         <Form>
           <Input></Input>
-          <Button width={'130px'} type={secondary}>Advanced</Button>
-          <Button width={'180px'} type={primary} >Search</Button>
+          <Button width={'130px'} type={"secondary"}>Advanced</Button>
+          <Button width={'180px'} type={"primary"} >Search</Button>
         </Form>
     </Container>
   )
