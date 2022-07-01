@@ -7,7 +7,7 @@ import { navbar } from "../utils/navbar";
 const Root = () => {
   return (
     <Routes>
-      <Route path={"/login"} element={<Navigate to={'/home'} />}  />
+      <Route path={"/"} element={<Navigate to={'/home'} />}  />
       <Route element={<Navbar/>}></Route> 
       {
         navbar.map(({id,path,Element})=>{
